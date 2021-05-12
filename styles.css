@@ -1,0 +1,99 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('./assets/banner1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;
+}
+
+.navbar-brand {
+    height: 60px;
+}
+
+.container-fluid {
+    margin: 0 9%;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar-nav > li {
+    margin-top: 3px;
+}
+
+.navbar-nav > .dropdown > .dropdown-toggle {
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(102, 93, 93, 0.3);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu > li {
+    color: white;
+    padding: 5px 9px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu > li > a {
+    color: white;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: transparent;
+    color: rgb(147, 147, 199);
+}
+
+.dropdown-menu > li > a::selection {
+    background-color: transparent;
+    color: rgb(147, 147, 199);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.chevron-down {
+    margin-left: 2px;
+}
+
+
+/* ------ Body ------  */
+
+.welcomeText {
+    padding: 10px 15px;
+    margin: 0;
+    background-color: rgba(102, 93, 93, 0.3);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.introText {
+    margin: 0;
+    margin-top: 40px;
+    font-size: 5rem;
+    line-height: 5.5rem;
+}
+
+/* ------ General ------  */
+
+label {
+    color: white;
+    font-weight: 500;
+}
