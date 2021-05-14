@@ -11,50 +11,349 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <!-- Styles -->
         <link rel="stylesheet" href="styles.css">
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Rozha+One&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img class="logo" src="./assets/logo.svg"></a>
+        <header>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><img class="logo" src="./assets/logo.svg"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+                                    role="button" aria-haspopup="true" aria-expanded="false">ACCOUNT
+                                    <span class="chevron-down">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </span></a>
+                                <ul class="dropdown-menu">
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">HOME</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" 
-                                role="button" aria-haspopup="true" aria-expanded="false">ACCOUNT
-                                <span class="chevron-down">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                    </svg>
-                                </span></a>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Profile</a></li>
-                              <li><a href="#">Logout</a></li>
-                            </ul>
-                          </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
 
-        <div class="container">
-            <div class="row">
-              <div class="col-sm-4">
-                <label class="welcomeText">WELCOME TO AON3D</label>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                  <label class="introText">Learn from us and 3DPrint Your Bright Future.</label>
+        <section class="intoSection">
+            <div class="container">
+                <div class="row">
+                <div class="col-sm-4">
+                    <label class="welcomeText">WELCOME TO AON3D</label>
                 </div>
-              </div>
-        </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                    <label class="introText">Learn from us and 3DPrint Your Bright Future.</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="modules">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 modules__item-wrapper">
+                                <div class="modules__item">
+                                    <div class="title">
+                                        <h4>Documentation</h4>
+                                    </div>
+                                    <div class="description">
+                                        <label class="descText">Find installation and configuration guides, maintenance procedures, material guides, and more.</label>
+                                    </div>
+                                    <div class="button itemBtn">
+                                        <a href="#">READ DOCS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 modules__item-wrapper">
+                                <div class="modules__item">
+                                    <div class="title">
+                                        <h4>AON3D Academy</h4>
+                                    </div>
+                                    <div class="description">
+                                        <label class="descText">Boost your knowledge about your products and enhance your professional profiles.</label>
+                                    </div>
+                                    <div class="button itemBtn">
+                                        <a href="#">ACCESS COURSES</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 modules__item-wrapper">
+                                <div class="modules__item">
+                                    <div class="title">
+                                        <h4>Online Store</h4>
+                                    </div>
+                                    <div class="description">
+                                        <label class="descText">Purchase consumables, spare parts, and filament.</label>
+                                    </div>
+                                    <div class="button itemBtn">
+                                        <a href="#">PURCHASE ITEMS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 modules__item-wrapper">
+                                <div class="modules__item">
+                                    <div class="title">
+                                        <h4>Vendors</h4>
+                                    </div>
+                                    <div class="description">
+                                        <label class="descText">Purchase consumables, spare parts, and filament.</label>
+                                    </div>
+                                    <div class="button itemBtn">
+                                        <a href="#">OUR VENDORS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 modules__item-wrapper">
+                                <div class="modules__item">
+                                    <div class="title">
+                                        <h4>Suppliers</h4>
+                                    </div>
+                                    <div class="description">
+                                        <label class="descText">Purchase consumables, spare parts, and filament.</label>
+                                    </div>
+                                    <div class="button itemBtn">
+                                        <a href="#">OUR SUPPLIERS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 modules__item-wrapper">
+                                <div class="modules__item">
+                                    <div class="title">
+                                        <h4>Material Freedom</h4>
+                                    </div>
+                                    <div class="description">
+                                        <label class="descText">Select from hundreds of materials. Avoid getting locked into using pricey proprietary plastics. Achieve lower total cost of ownership.</label>
+                                    </div>
+                                    <div class="button itemBtn">
+                                        <a href="#">BROWSE MATERIALS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="./assets/banner1.png" alt="Print Lab">
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="caption__CustomContent col-12 col-sm-5">
+                                                    <h2>Prototyping, Small Batch, and Large Scale</h2>
+                                                    <p>Whether you’re doing prototyping, small batch, or large-scale production runs, the AON-M2 2020 Industrial 3D Printer scales with your budget.</p>
+                                                    <p><a href="#">Request a Sample Kit ></a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/banner2.png" alt="Print In Process">
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="caption__CustomContent col-12 col-sm-5">
+                                                    <h2>Making Materials Matter™</h2>
+                                                    <p> Material selection, slicer file optimization, print process development - our materials scientists, applications engineers, and additive experts support you at each step.</p>
+                                                    <p><a href="#">See the Process ></a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/banner3.jpg" alt="Materials">
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="caption__CustomContent col-12 col-sm-5">
+                                                    <h2>The Part You Want. The Properties You Need.</h2>
+                                                    <p>Select between hundreds of materials. Pick the properties and pricing to outperform your project goals.</p>
+                                                    <p><a href="#">Choose your material ></a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/banner4.jpeg" alt="3D Printer">
+                                    <div class="carousel-caption">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="caption__CustomContent col-12 col-sm-5">
+                                                    <h2>Reach your material's maximum potential with full-cycle 3D printing expertise.</h2>
+                                                    <p><a href="#">Get your quote ></a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="top__links">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-3 order-2 order-lg-1">
+                            <div class="list-item">
+                                <div class="title">
+                                    <p>Platform</p>
+                                </div>
+                                <ul class="menu-footer-list">
+                                    <li class="menu-item">
+                                        <a href="#">Industrial 3D Printer</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-item">
+                                <div class="title">
+                                    <p>Materials</p>
+                                </div>
+                                <ul class="menu-footer-list">
+                                    <li class="menu-item">
+                                        <a href="#">PEKK & Carbon-Fiber PEKK</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">PEEK & Carbon-Fiber PEEK</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">ULTEM™ 9085</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Polycarbonate</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Nylon (PA)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 order-3 order-lg-2">
+                            <div class="list-item">
+                                <div class="title">
+                                    <p>Platform</p>
+                                </div>
+                                <ul class="menu-footer-list">
+                                    <li class="menu-item">
+                                        <a href="#">Event</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-item">
+                                <div class="title">
+                                    <p>Company</p>
+                                </div>
+                                <ul class="menu-footer-list">
+                                    <li class="menu-item">
+                                        <a href="#">About AON3D</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Careers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 order-3 order-lg-3">
+                            <div class="list-item">
+                                <ul class="menu-footer-list">
+                                    <li class="menu-item">
+                                        <a href="#">Advanced Additive Training</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Design for Additive Manufacturing</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Materials Selection</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Process Parameter Development</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Company</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Feedback</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 order-4 order-lg-4">
+                            <div class="list-item">
+                                <div class="title">
+                                    <p>Subscribe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom__copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="bottom__copyright__wrapper">
+                            <div class="copyrights">
+                                <p>©AON3D Copyright 2021. All rights reserved by </p>
+                            </div>
+                            <ul class="menu-footer-legal">
+                                <li class="menu-item">
+                                    <a href="#">Privacy</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Terms of Use</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Terms of Sale</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
     </body>
 </html>
